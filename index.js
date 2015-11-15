@@ -18,8 +18,6 @@ mongodb.MongoClient.connect(mongodURL, function(err, db) {
 app.get('/user/signup', function(request, response) {
 	var item = {
 		NM : request.query.NM,
-		MP : request.query.MP,
-		Email : request.query.Email,
 		User : request.query.User,
 		Password : request.query.Password
 	}
